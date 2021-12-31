@@ -34,13 +34,15 @@ body{
 }
 
 #dong_ho #thoi_gian{
-    /* background-color: rgb(103, 241, 188); */
-    border: 2px solid black;
+    background-color: rgb(147, 97, 170);
+    border: 9px solid white;
     padding: 30px 10px;
-    border-bottom-left-radius: 20px;
+    /* border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-right-radius: 20px; */
+
+    border-radius: 25px;
 
     box-shadow: 3px 7px 50px #fcf9f9;
 
@@ -77,5 +79,5 @@ body{
 #dong_ho #thoi_gian {
     position: relative;
     margin: 5px 10px;
-    -webkit-box-reflect: below 10px linear-gradient(transparent, #0004);
+    -webkit-box-reflect: below 10px linear-gradient(transparent, rgba(0, 0, 0, 0.144));
 }
