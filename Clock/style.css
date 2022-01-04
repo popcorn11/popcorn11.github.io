@@ -79,12 +79,14 @@ body{
 
 #thoi_gian{
     color: white;
-    text-shadow: 1px 1px 20px white;
+    text-shadow: 0px 0px 8px white;
 }
 
 #thoi_gian:hover{
-    background: white;
+/*     background: white; */
+    background: linear-gradient(to bottom right,#ffffff, #c3d6e8);
     color: black;
+    text-shadow: 6px 5px 5px #404040;
     transition: 0.8s;
 }
 
