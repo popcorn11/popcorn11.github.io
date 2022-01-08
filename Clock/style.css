@@ -44,19 +44,14 @@ body .clock{
 }
 
 #dong_ho #thoi_gian{
-    /* background-color: rgb(147, 97, 170); */
     border: 9px solid white;
     padding: 30px 10px;
-
     border-radius: 25px;
-
     box-shadow: 6px 6px 90px #fcf9f9;
-
 }
 
 
 #dong_ho #thoi_gian div span{
-/*     color: white; */
     font-family:'digital-clock-font';
     position: relative;
     display:block;
