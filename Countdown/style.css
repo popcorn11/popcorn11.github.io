@@ -4,19 +4,32 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 body {
     min-height: 100vh;
+    background: linear-gradient(to right,#333333, #dd1818);
+}
+
+body .taskbar {
+    background: #bebebe;
+    height: 50px;
     display: flex;
     justify-content: center;
+    align-items: flex-end;
+}
+
+body .container{
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(to right,#333333, #dd1818);
+    min-height: 600px;
 }
 
 h1{
     text-align: center;
     font-weight: 900;
     font-size: 5rem;
-    /* font-family:'digital-clock-font'; */
     color: #fff;
 }
 
@@ -63,4 +76,39 @@ h3{
 
 hr {
     margin: 8px 0px;
+}
+
+
+.taskbar .goto{
+    position: relative;
+    right: 0%;
+    height: 100%;
+}
+
+.taskbar .goto#coundownNY {
+    /*     background: #646464;
+        border-radius: 15px 15px 0px 0px; */
+    border-style: solid;
+    border-color: #bebebe00 #bebebe00 black #bebebe00;
+    /*     box-shadow: 0px 0px 10px black; */
+}
+
+.goto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+/*     border-radius: 8px 8px 0px 0px; */
+}
+
+.taskbar .goto a{
+    color: black;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.taskbar div:hover {
+    background: rgba(104, 104, 104, 0.445);
+    transition: 0.5s;
 }
