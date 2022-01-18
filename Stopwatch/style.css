@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #696969, #232526);
+}
+
+body .taskbar {
+    background: #bebebe;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.taskbar .goto{
+    position: relative;
+    right: 0%;
+    height: 100%;
+}
+
+.taskbar .goto#stopwatch {
+/*     background: #646464;
+    border-radius: 15px 15px 0px 0px; */
+    border-style: solid;
+/*     border-color: #fff #fff #646464 #fff; */
+    border-color: #bebebe00 #bebebe00 black #bebebe00;
+/*     box-shadow: 0px 0px 10px black; */
+}
+
+.goto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16%;
+}
+
+.taskbar .goto a{
+    /* color: rgb(70, 120, 153); */
+    color: black;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: 700;
+}
+
+.taskbar div:hover {
+    background: rgba(104, 104, 104, 0.603);
+    transition: 0.5s;
+}
+
+
+body .wrapper {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+}
+
+.wrapper .time{
+    border: 3px solid white;
+    padding: 20px;
+    margin: 30px;
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+}
+.wrapper .time{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .time span{
+    color: #fff;
+    font-size: 2.5rem
+}
+
+.wrapper .time .comma, .wrapper .time .millisecond {
+    color: rgb(252 99 99);
+}
+
+.wrapper .buttons{
+    width: 900px;
+    height: 70px;
+       
+}
+
+.wrapper .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .buttons button{
+    margin: 15px;
+    width: 100px;
+    height: 40px;
+
+    border: 0px solid #fff;
+    border-radius: 10px;
+    background: rgb(179 59 59);
+
+    color: #fff;
+    font-weight: 600;
+}
+
+/* .wrapper .buttons .start{
+    position: absolute;
+    width: 230px;
+} */
