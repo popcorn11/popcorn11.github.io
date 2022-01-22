@@ -1,5 +1,5 @@
 <!DOCTYPE html>
- <html lang="en">
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,38 +7,56 @@
         <title>Clock</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
-</head>
+    </head>
     <body onmousedown='return false;' onselectstart='return false;'>
-        <div class="taskbar">
-            <div class="goto" id="clock">
-                <a href="https://popcorn11.github.io/Clock/">CLOCK</a>
-            </div>
-            <div class="goto" id="stopwatch">
-                <a href="https://popcorn11.github.io/Stopwatch/">STOPWATCH</a>
-            </div>
-            <div class="goto" id="coundownNY">
-                <a href="https://popcorn11.github.io/Countdown/">COUNTDOWN NY</a>
-            </div>
-        </div>
-        <div class="clock">
-            <div id="dong_ho">
-                <div id="thoi_gian">
-                    <div>
-                        <span id="gio">00</span> 
+
+        <div class="wrapper">
+            <!-- Header -->
+            <div class="header">
+                <div class="nav clk"><a href="https://popcorn11.github.io/Clock/">Clock</a></div>
+                <div class="nav stw"><a href="https://popcorn11.github.io/Stopwatch/">Stopwatch</a></div>
+                <div class="nav cdn"><a href="#">Countdown</a></div>
+                
+                <div class="nav more" tabindex="5">
+                    <div class="lines">
+                        <hr>
+                        <hr>
+                        <hr>
                     </div>
-                    <span class="hai_cham">:</span>
-                    <div>
-                        <span id="phut">00</span>
-                    </div>
-                    <span class="hai_cham">:</span>
-                    <div>
-                        <span id="giay">00</span>
+                    
+                    <div class="subnav">
+                        <div><a href="https://popcorn11.github.io/Countdown/"  tabindex="6">Countdown Lunar New Year 2022</a></div>
+                        <div><a href="#">...</a></div>
+                        <div><a href="#">...</a></div>
                     </div>
                 </div>
             </div>
+            <!-- ............................................... -->
+    
+            <!-- Content -->
+            <div class="content">
+                <div class="clock">
+                    <div id="dong_ho">
+                        <div id="thoi_gian">
+                            <div>
+                                <span id="gio">00</span> 
+                            </div>
+                            <span class="hai_cham">:</span>
+                            <div>
+                                <span id="phut">00</span>
+                            </div>
+                            <span class="hai_cham">:</span>
+                            <div>
+                                <span id="giay">00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ............................................... -->
         </div>
 
         <script src="script.js"></script>
 
     </body>
- </html>
+</html>

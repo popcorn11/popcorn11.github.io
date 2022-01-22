@@ -10,13 +10,122 @@ body {
     background: linear-gradient(to bottom, #696969, #232526);
 }
 
-body .taskbar {
-    background: #bebebe;
-    height: 50px;
+
+/* header............................... */
+
+.header{
+    width: 100%;
+    height: 48px;
+    background-color: #000;
+
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+
+    position: fixed;
 }
+
+.header .nav:not(.more){
+    margin: 0 25px;
+}
+
+.header .nav a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+.header .clk a{
+    color:rgb(179 59 59);
+    border-style: solid;
+    border-color: #bebebe00 #bebebe00 rgb(179 59 59) #bebebe00;
+    background-clip: padding-box;
+}
+
+.header .nav:not(.more):hover a{
+    background-color: #ccc;
+    color: #000;
+    border-radius: 5px;
+    transition: 0.75s;
+}
+.header .nav:not(.more):active a{
+    background-color: #6a6a6adb;
+    transition: 0.5s;
+}
+
+.header .more{
+    width: 55px;
+    height: 48px;
+    position: absolute;
+    right: 0;
+}
+
+.header .more .lines{
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 0 13px 0 13px;
+    margin: 0;
+}
+
+.header .more .lines hr{
+    background-color: #fff;
+    margin: 3px 0px;
+}
+
+
+.header .more .lines:hover{
+    background-color: #a73333;
+    transition: 0.5s;
+}
+
+.header .more .subnav{
+    display: none;
+    width: 240px;
+    border-radius: 5px;
+}
+
+.header .more .subnav div{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.header .more .subnav a{
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+    z-index: 5;
+}
+
+.header .more .subnav div:hover{
+    background-color: #ccc;
+    border-radius: 5px;
+    transition: 0.75s;
+}
+.header .more .subnav div:active{
+    background-color: #6a6a6adb;
+    transition: 0.5s;
+}
+
+
+.header .more:hover .subnav{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    background-color: #fff;
+}
+
+
+/*...................................... */
 
 body .clock{
     display:flex;
@@ -27,6 +136,7 @@ body .clock{
 
 #dong_ho #thoi_gian{
     display:flex;
+    justify-content: center;
 }
 #dong_ho #thoi_gian div{
     position: relative;
@@ -43,7 +153,6 @@ body .clock{
     box-shadow: 6px 6px 90px #fcf9f9;
 
 }
-
 
 #dong_ho #thoi_gian div span{
 /*     color: white; */
@@ -89,41 +198,6 @@ body .clock{
     color: black;
     text-shadow: 6px 5px 5px #404040;
     transition: 0.8s;
-}
-
-.taskbar .goto{
-    position: relative;
-    right: 0%;
-    height: 100%;
-}
-
-.taskbar .goto#clock {
-/*     background: #646464;
-    border-radius: 15px 15px 0px 0px; */
-    border-style: solid;
-/*     border-color: #fff #fff #646464 #fff; */
-    border-color: #bebebe00 #bebebe00 black #bebebe00;
-/*     box-shadow: 0px 0px 10px black; */
-}
-
-.goto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 16%;
-}
-
-.taskbar .goto a{
-    /* color: rgb(70, 120, 153); */
-    color: black;
-    text-decoration: none;
-    font-size: 100%;
-    font-weight: 700;
-}
-
-.taskbar div:hover {
-    background: rgba(104, 104, 104, 0.603);
-    transition: 0.5s;
 }
 
 @font-face{
