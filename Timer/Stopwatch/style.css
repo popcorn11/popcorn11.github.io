@@ -10,60 +10,130 @@ body {
     background: linear-gradient(to bottom, #696969, #232526);
 }
 
-body .taskbar {
-    background: #bebebe;
-    height: 50px;
+/* header............................... */
+
+.header{
+    width: 100%;
+    height: 48px;
+    background-color: #000;
+
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-}
-
-
-.taskbar .goto{
-    position: relative;
-    right: 0%;
-    height: 100%;
-}
-
-.taskbar .goto#stopwatch {
-/*     background: #646464;
-    border-radius: 15px 15px 0px 0px; */
-    border-style: solid;
-/*     border-color: #fff #fff #646464 #fff; */
-    border-color: #bebebe00 #bebebe00 black #bebebe00;
-/*     box-shadow: 0px 0px 10px black; */
-}
-
-.goto{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    width: 16%;
+
+    position: fixed;
 }
 
-.taskbar .goto a{
-    /* color: rgb(70, 120, 153); */
-    color: black;
+.header .nav:not(.more){
+    margin: 0 25px;
+}
+
+.header .nav a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 600;
     text-decoration: none;
-    font-size: 100%;
-    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 40px;
+    padding: 0 15px;
 }
 
-.taskbar div:hover {
-    background: rgba(104, 104, 104, 0.603);
+.header .stw a{
+    color:rgb(179 59 59);
+    border-style: solid;
+    border-color: #bebebe00 #bebebe00 rgb(179 59 59) #bebebe00;
+    background-clip: padding-box;
+}
+
+.header .nav:not(.more):hover a{
+    background-color: #ccc;
+    color: #000;
+    border-radius: 5px;
+    transition: 0.75s;
+}
+.header .nav:not(.more):active a{
+    background-color: #6a6a6adb;
+    transition: 0.5s;
+}
+
+.header .more{
+    width: 55px;
+    height: 48px;
+    position: absolute;
+    right: 0;
+}
+
+.header .more .lines{
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 0 13px 0 13px;
+    margin: 0;
+}
+
+.header .more .lines hr{
+    background-color: #fff;
+    margin: 3px 0px;
+}
+
+
+.header .more .lines:hover{
+    background-color: #a73333;
+    transition: 0.5s;
+}
+
+.header .more .subnav{
+    display: none;
+    width: 240px;
+    border-radius: 5px;
+}
+
+.header .more .subnav div{
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.header .more .subnav a{
+    color: #000;
+    text-align: center;
+    line-height: 25px;
+    z-index: 5;
+}
+
+.header .more .subnav div:hover{
+    background-color: #ccc;
+    border-radius: 5px;
+    transition: 0.75s;
+}
+.header .more .subnav div:active{
+    background-color: #6a6a6adb;
     transition: 0.5s;
 }
 
 
-body .wrapper {
+.header .more:hover .subnav{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 48px;
+    background-color: #fff;
+}
+
+
+/*...................................... */
+body .content {
     display: flex;
     flex-direction: column; 
     justify-content: center;
     align-items: center;
-    min-height: 600px;
+    min-height: 700px;
 }
 
-.wrapper .time{
+.content .time{
     border: 3px solid white;
     padding: 20px;
     margin: 30px;
@@ -71,34 +141,34 @@ body .wrapper {
     height: 300px;
     border-radius: 300px;
 }
-.wrapper .time{
+.content .time{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper .time span{
+.content .time span{
     color: #fff;
     font-size: 2.5rem
 }
 
-.wrapper .time .comma, .wrapper .time .millisecond {
+.content .time .comma, .content .time .millisecond {
     color: rgb(252 99 99);
 }
 
-.wrapper .buttons{
+.content .buttons{
     width: 900px;
     height: 70px;
        
 }
 
-.wrapper .buttons{
+.content .buttons{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper .buttons button{
+.content .buttons button{
     margin: 15px;
     width: 100px;
     height: 40px;
@@ -111,7 +181,7 @@ body .wrapper {
     font-weight: 600;
 }
 
-/* .wrapper .buttons .start{
+/* .content .buttons .start{
     position: absolute;
     width: 230px;
 } */

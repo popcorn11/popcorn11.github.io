@@ -1,63 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Countdown New Year</title>
-</head>
-<body onmousedown='return false;' onselectstart='return false;'>
-    <div class="taskbar">
-        <div class="goto" id="clock">
-            <a href="https://popcorn11.github.io/Clock/">CLOCK</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Countdown New Year</title>
+    </head>
+    <body onmousedown='return false;' onselectstart='return false;'>
+
+        <div class="wrapper">
+            <!-- Header -->
+            <div class="header">
+                <div class="nav clk"><a href="https://popcorn11.github.io/Clock/">Clock</a></div>
+                <div class="nav stw"><a href="https://popcorn11.github.io/Stopwatch/">Stopwatch</a></div>
+                <div class="nav cdn"><a href="#">Countdown</a></div>
+                
+                <div class="nav more" tabindex="5">
+                    <div class="lines">
+                        <hr>
+                        <hr>
+                        <hr>
+                    </div>
+                    
+                    <div class="subnav">
+                        <div><a href="https://popcorn11.github.io/Countdown/"  tabindex="6">Countdown Lunar New Year 2022</a></div>
+                        <div><a href="#">...</a></div>
+                        <div><a href="#">...</a></div>
+                    </div>
+                </div>
+            </div>
+            <!-- ............................................... -->
+    
+            <!-- Content -->
+            <div class="container">
+                <div class="C2022">
+                    <div>
+                        <h3>Countdown Lunar New Year</h3>
+                    </div>
+                    <div>
+                        <h1>2022</h1>
+                    </div>
+                </div>
+    
+    
+                <div class="countdown">
+                    <div class="day">
+                        <h2>00</h2>
+                        <hr>
+                        <h5>Days</h5>
+                    </div>
+    
+                    <div class="hour">
+                        <h2>00</h2>
+                        <hr>
+                        <h5>Hours</h5>
+                    </div>
+    
+                    <div class="minute">
+                        <h2>00</h2>
+                        <hr>
+                        <h5>Minutes</h5>
+                    </div>
+    
+                    <div class="second">
+                        <h2>00</h2>
+                        <hr>
+                        <h5>Seconds</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- ............................................... -->
         </div>
-        <div class="goto" id="stopwatch">
-            <a href="https://popcorn11.github.io/Stopwatch/">STOPWATCH</a>
-        </div>
-        <div class="goto" id="coundownNY">
-            <a href="https://popcorn11.github.io/Countdown/">COUNTDOWN NY</a>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="C2022">
-            <div>
-                <h3>Countdown Lunar New Year</h3>
-            </div>
-            <div>
-                <h1>2022</h1>
-            </div>
-        </div>
 
 
-        <div class="countdown">
-            <div class="day">
-                <h2>00</h2>
-                <hr>
-                <h5>Days</h5>
-            </div>
-
-            <div class="hour">
-                <h2>00</h2>
-                <hr>
-                <h5>Hours</h5>
-            </div>
-
-            <div class="minute">
-                <h2>00</h2>
-                <hr>
-                <h5>Minutes</h5>
-            </div>
-
-            <div class="second">
-                <h2>00</h2>
-                <hr>
-                <h5>Seconds</h5>
-            </div>
-        </div>
-    </div>
-
-    <script src="index.js"></script>
-</body>
+        <script src="index.js"></script>
+    </body>
 </html>
 
