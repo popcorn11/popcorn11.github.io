@@ -38,13 +38,6 @@ body {
     padding: 0 15px;
 }
 
-.header .cdn a{
-    color:rgb(179 59 59);
-    border-style: solid;
-    border-color: #bebebe00 #bebebe00 rgb(179 59 59) #bebebe00;
-    background-clip: padding-box;
-}
-
 .header .nav:not(.more):hover a{
     background-color: #ccc;
     color: #000;
@@ -102,6 +95,10 @@ body {
     text-align: center;
     line-height: 25px;
     z-index: 5;
+}
+
+.header .more .subnav .cdn22{
+    color:rgb(179 59 59);
 }
 
 .header .more .subnav div:hover{
