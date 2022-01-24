@@ -149,11 +149,30 @@ body .content {
 
 .content .time span{
     color: #fff;
-    font-size: 2.5rem
+    font-family:'digital-clock-font';
+    font-size: 2.5rem;
+/*     width: 38px;
+    display: flex;
+    justify-content: center; */
+    
+}
+
+.content .time .tm {
+    width: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+@font-face{
+    font-family:'digital-clock-font';
+    src: url('font-digital-clock.ttf');
 }
 
 .content .time .comma, .content .time .millisecond {
     color: rgb(252 99 99);
+/*     font-size: 23px;
+    position: relative;
+    top: 5.7px; */
 }
 
 .content .buttons{
@@ -180,6 +199,8 @@ body .content {
     color: #fff;
     font-weight: 600;
 }
+
+
 
 /* .content .buttons .start{
     position: absolute;
