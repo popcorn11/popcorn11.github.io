@@ -6,7 +6,7 @@ const seconds = document.querySelector('.second h2');
 timer()
 
 function timer(){
-    const date = new Date("February 1, 2022 00:00:00").getTime();
+    const date = new Date("January 22, 2023 00:00:00").getTime();
     const now = new Date().getTime();
     const dist = date - now;
 

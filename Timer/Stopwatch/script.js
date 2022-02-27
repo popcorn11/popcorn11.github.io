@@ -2,14 +2,14 @@ let hr = min = sec = ms = "0" + 0,
     startTimer;
 
 const startBtn = document.querySelector(".start"),
-   stopBtn = document.querySelector(".stop"),
-   resetBtn = document.querySelector(".reset");
+    stopBtn = document.querySelector(".stop"),
+    resetBtn = document.querySelector(".reset");
 
    startBtn.addEventListener("click", start);
    stopBtn.addEventListener("click", stop);
    resetBtn.addEventListener("click", reset);
 
- function start() {
+function start() {
     startBtn.classList.add("active");
     stopBtn.classList.remove("stopActive");
 
@@ -33,12 +33,21 @@ const startBtn = document.querySelector(".start"),
         }
         putValue();
     },10); //1000ms = 1s
+
+    startBtn.classList.add('display-none');
+    startBtn.classList.remove('width-200');
+    stopBtn.classList.add('display-inlBl');
+    resetBtn.classList.add('display-inlBl');
 }
 
 function stop() {
     startBtn.classList.remove("active");
     stopBtn.classList.add("stopActive");
     clearInterval(startTimer);
+
+    startBtn.classList.remove('display-none');
+    stopBtn.classList.remove('display-inlBl');
+
 }
 function reset() {
     startBtn.classList.remove("active");
@@ -46,6 +55,11 @@ function reset() {
     clearInterval(startTimer);
     hr = min = sec = ms = "0" + 0;
     putValue();
+
+    startBtn.classList.remove('display-none');
+    startBtn.classList.add('width-200');
+    stopBtn.classList.remove('display-inlBl');
+    resetBtn.classList.remove('display-inlBl');
 }
 
 function putValue() {
@@ -54,4 +68,7 @@ function putValue() {
     document.querySelector(".minute").innerText = min;
     document.querySelector(".hour").innerText = hr;
 }
+
+
+
 

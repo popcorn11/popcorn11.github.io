@@ -10,6 +10,18 @@ body {
     background: linear-gradient(to bottom, #696969, #232526);
 }
 
+.display-none{
+    display: none !important;
+}
+
+.display-inlBl{
+    display: inline-block !important;
+}
+
+.width-200{
+    width: 200px !important;
+}
+
 /* header............................... */
 
 .header{
@@ -140,8 +152,7 @@ body .content {
     width: 300px;
     height: 300px;
     border-radius: 300px;
-}
-.content .time{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,9 +162,9 @@ body .content {
     color: #fff;
     font-family:'digital-clock-font';
     font-size: 2.5rem;
-/*     width: 38px;
+    width: 12px;
     display: flex;
-    justify-content: center; */
+    justify-content: center;
     
 }
 
@@ -170,39 +181,34 @@ body .content {
 
 .content .time .comma, .content .time .millisecond {
     color: rgb(252 99 99);
-/*     font-size: 23px;
-    position: relative;
-    top: 5.7px; */
 }
 
-.content .buttons{
-    width: 900px;
-    height: 70px;
-       
-}
-
-.content .buttons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.content .buttons button{
-    margin: 15px;
+.buttons button{
     width: 100px;
     height: 40px;
-
-    border: 0px solid #fff;
+    margin: 15px;
+    border: 0px;
     border-radius: 10px;
     background: rgb(179 59 59);
-
     color: #fff;
     font-weight: 600;
 }
 
+.buttons .stop,
+.buttons .reset {
+    display: none;
+    animation: fade ease-in .3s;
+}
+.buttons .start {
+    animation: fade ease-in .3s;
+}
 
 
-/* .content .buttons .start{
-    position: absolute;
-    width: 230px;
-} */
+@keyframes fade {
+    from {
+        opacity: .5;
+    }
+    to {
+        opacity: 1;
+    }
+}
