@@ -25,7 +25,7 @@ let projs = [
         name: 'Timer',
         img: 'project_Timer.png',
         languages: 'HTML, CSS, JavaScript',
-        frameworks: 'None',
+        frameworks: 'No frameworks',
         descibe: 'Web page for watching time and counting time.',
         de_describe: 'A basic web page for everyone that show time as an alarm and other records time.',
         demo: 'https://popcorn11.github.io/Timer/',
