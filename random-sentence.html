@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+	<head>
+		<title>Random question generator</title>
+		<meta charset='utf-8' />
+		<style type='text/css'>
+			body {
+				font-family: Arial, sans-serif;
+				text-align: center;
+			}
+
+			h1 {
+				font-size: 2rem;
+			}
+
+			p {
+				font-size: 1.5rem;
+				margin-top: 2rem;
+			}
+
+			button {
+				font-size: 1.2rem;
+				padding: 0.5rem 1rem;
+				margin-top: 2rem;
+				border: none;
+				background-color: #007bff;
+				color: #fff;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #0062cc;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Random Question Generator</h1>
+		<textarea name="questions" id="questions-input" cols="60" rows="20"></textarea>
+		<p id="ques"></p>
+		<div class="btn">
+			<!-- <button id="split-ques">Split</button> -->
+			<button id="generate-ques">Random</button>
+			<button id="repeat-ques">Repeat</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
